@@ -1,0 +1,98 @@
+.flex-container {
+  display: flex;
+}
+
+.mobileMenuContainer {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 2;
+}
+.mobileMenuContainer:hover .mobileMenuLine {
+  opacity: 0.8;
+}
+
+.mobileMenuLine {
+  padding: 1px;
+  background-color: rgba(255, 255, 255, 0.87);
+  width: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.mobileMenuClosedTopLine {
+  padding: 1px;
+  background-color: rgba(255, 255, 255, 0.87);
+  width: 20px;
+  transform: rotate(-45deg) translate(-4px, 6px);
+  transition: transform 0.4s ease-in-out;
+}
+.mobileMenuClosedMiddleLine {
+  padding: 1px;
+  background-color: rgba(255, 255, 255, 0.87);
+  width: 20px;
+  transform: rotate(45deg) translate(1px, -2px);
+  transition: transform 0.4s ease-in-out;
+}
+.mobileMenuClosedLastLine {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.navMenu {
+  position: fixed;
+  top: 0;
+  left: 22%;
+  width: 80%;
+  padding: 10px 0 10px 30px;
+  background-color: #242424;
+  height: 80vh;
+  z-index: 1;
+  transition: left 0.4s ease-in-out;
+  box-shadow: 1px 1px 5px white;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menuIsClosed {
+  position: fixed;
+  top: 0;
+  left: 105%;
+  width: 80%;
+  padding: 10px 0 10px 30px;
+  background-color: #242424;
+  height: 80vh;
+  z-index: 1;
+  transition: left 0.4s ease-in-out;
+  box-shadow: 1px 1px 5px white;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.navMenu a,
+.menuIsClosed a {
+  font-size: 20px;
+}
+.navMenu a:hover {
+  opacity: 0.8;
+}
+
+.navMenuLogo {
+  font-size: 26px !important;
+  text-shadow: 0px 0px 1px;
+}
+
+.galleryMenuListItem {
+  font-size: 16px !important;
+  padding-left: 10px;
+  padding-top: 8px;
+}

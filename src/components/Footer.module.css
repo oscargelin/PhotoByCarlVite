@@ -1,0 +1,128 @@
+.flexContainerOne {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  font-size: 14px;
+}
+.flexContainerTwo {
+  display: flex;
+  gap: 10px;
+}
+.link:hover {
+  opacity: 0.8;
+}
+.carSvg {
+  position: absolute;
+  animation: 6s linear 0s infinite race-car;
+  bottom: -10px;
+}
+.carFlame {
+  padding: 10px;
+  position: absolute;
+  animation: 6s linear 0s infinite race-car-flame;
+}
+@keyframes race-car {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100ch);
+  }
+}
+@keyframes race-car-flame {
+  0% {
+    box-shadow: none;
+  }
+  25% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: none;
+  }
+  75% {
+    box-shadow: -20px 10px 10px rgb(255, 153, 0);
+  }
+}
+
+.traffiLightContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  bottom: 10px;
+  gap: 2px;
+  animation: 6s ease-in-out 0s infinite traffic-lights;
+}
+
+.trafficLightOne {
+  padding: 6px;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: 6s ease-in-out 0s infinite traffic-light-one;
+  border: 1px solid orange;
+}
+.trafficLightTwo {
+  padding: 6px;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: 6s ease-in-out 0s infinite traffic-light-two;
+  border: 1px solid orange;
+}
+.trafficLightThree {
+  padding: 6px;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: 6s ease-in-out 0s infinite traffic-light-three;
+  border: 1px solid orange;
+}
+@keyframes traffic-lights {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+  90% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes traffic-light-one {
+  0% {
+    background-color: red;
+  }
+  60% {
+    background-color: transparent;
+  }
+}
+@keyframes traffic-light-two {
+  30% {
+    background-color: transparent;
+  }
+  40% {
+    background-color: rgb(255, 242, 0);
+  }
+  65% {
+    background-color: transparent;
+  }
+}
+
+@keyframes traffic-light-three {
+  50% {
+    background-color: transparent;
+  }
+  55% {
+    background-color: rgb(80, 232, 80);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
