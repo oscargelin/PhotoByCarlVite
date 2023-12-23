@@ -7,17 +7,17 @@ const Footer = () => {
     <footer>
       <div className={Styles.carSvg}>
         <div className={Styles.carFlame}></div>
-        <CarSvg />
+        {/* <CarSvg /> */}
       </div>
-      <div className={Styles.traffiLightContainer}>
+      {/* <div className={Styles.traffiLightContainer}>
         <div className={Styles.trafficLightOne}></div>
         <div className={Styles.trafficLightTwo}></div>
         <div className={Styles.trafficLightThree}></div>
-      </div>
+      </div> */}
       <div>
         <ul className={Styles.flexContainerOne}>
-          <a href="mailto: carlgelin@gmail.com" className={Styles.link}>
-            <li>carlgelin@gmail.com</li>
+          <a href="mailto: gelin.carl@gmail.com" className={Styles.link}>
+            <li>gelin.carl@gmail.com</li>
           </a>
           <li>
             <a href="tel:+46725252522" className={Styles.link}>
