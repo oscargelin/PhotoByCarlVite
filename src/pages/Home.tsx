@@ -1,4 +1,3 @@
-//@ts-nocheck
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 import Header from "../components/Header";

@@ -1,8 +1,7 @@
-import React from "react";
+import CarSvg from "../assets/images/svgs/CarSvg";
+import InstaSvg from "../assets/images/svgs/InstaSvg";
+import PinterestSvg from "../assets/images/svgs/PinterestSvg";
 import Styles from "./Footer.module.css";
-import InstaSvg from "../assets/InstaSvg";
-import PinterestSvg from "../assets/PinterestSvg";
-import CarSvg from "../assets/CarSvg";
 const Footer = () => {
   return (
     <footer>

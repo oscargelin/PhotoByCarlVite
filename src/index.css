@@ -50,7 +50,7 @@ footer {
 }
 h1 {
   font-size: 42px;
-  text-shadow: 0px 0px 3px #242424;
+  text-shadow: 0px 0px 2px #242424;
   width: fit-content;
 }
 svg {
@@ -75,5 +75,18 @@ img {
 @media only screen and (max-width: 320px) {
   img {
     height: 186px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    width: 100%;
+  }
+  main {
+    padding-top: 40px;
   }
 }

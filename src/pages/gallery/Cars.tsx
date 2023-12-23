@@ -1,4 +1,4 @@
-import { cars } from "../../assets/carImages";
+import { cars } from "../../assets/imageList";
 import { TImage } from "../../assets/types";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";

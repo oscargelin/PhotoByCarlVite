@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import carJpg from "../assets/images/cars/carFour.jpg";
+import carJpg from "../assets/images/cars/carNine.jpg";
 import eventsJpg from "../assets/images/events/champagne.jpg";
 import outdoorsJpg from "../assets/images/outdoors/outdoorsOne.jpg";
 import randomJpg from "../assets/images/random/randomOne.jpg";

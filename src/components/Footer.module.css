@@ -23,16 +23,16 @@
 }
 @keyframes race-car {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-40vw);
   }
   25% {
-    transform: translateX(0%);
+    transform: translateX(-42vw);
   }
   60% {
-    transform: translateX(0%);
+    transform: translateX(-42vw);
   }
   100% {
-    transform: translateX(100ch);
+    transform: translateX(100vw);
   }
 }
 @keyframes race-car-flame {
@@ -65,21 +65,21 @@
   border-radius: 50%;
   background-color: transparent;
   animation: 6s ease-in-out 0s infinite traffic-light-one;
-  border: 1px solid orange;
+  border: 2px solid orange;
 }
 .trafficLightTwo {
   padding: 6px;
   border-radius: 50%;
   background-color: transparent;
   animation: 6s ease-in-out 0s infinite traffic-light-two;
-  border: 1px solid orange;
+  border: 2px solid orange;
 }
 .trafficLightThree {
   padding: 6px;
   border-radius: 50%;
   background-color: transparent;
   animation: 6s ease-in-out 0s infinite traffic-light-three;
-  border: 1px solid orange;
+  border: 2px solid orange;
 }
 @keyframes traffic-lights {
   0% {

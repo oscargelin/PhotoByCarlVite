@@ -37,92 +37,106 @@ const Header = () => {
           PhotoByCarl
         </Link>
       </h1>
-
-      <div>
-        <nav>
+      <nav>
+        <div
+          className={styles.mobileMenuContainer}
+          onMouseDown={(e) => handleToggleMenu(e)}
+        >
           <div
-            className={styles.mobileMenuContainer}
-            onMouseDown={(e) => handleToggleMenu(e)}
-          >
-            <div
-              className={
-                isMenuClosed
-                  ? styles.mobileMenuLine
-                  : styles.mobileMenuClosedTopLine
-              }
-            ></div>
-            <div
-              className={
-                isMenuClosed
-                  ? styles.mobileMenuLine
-                  : styles.mobileMenuClosedMiddleLine
-              }
-            ></div>
-            <div
-              className={
-                isMenuClosed
-                  ? styles.mobileMenuLine
-                  : styles.mobileMenuClosedLastLine
-              }
-            ></div>
-          </div>
-          <ul
-            ref={menuRef}
-            className={isMenuClosed ? styles.menuIsClosed : styles.navMenu}
-          >
-            <h2>
-              <Link to="/" className={styles.navMenuLogo}>
-                PhotoByCarl &trade;
-              </Link>
-            </h2>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/gallery">Gallery</Link>
-              <ul className={styles.galleryMenuList}>
+            className={
+              isMenuClosed
+                ? styles.mobileMenuLine
+                : styles.mobileMenuClosedTopLine
+            }
+          ></div>
+          <div
+            className={
+              isMenuClosed
+                ? styles.mobileMenuLine
+                : styles.mobileMenuClosedMiddleLine
+            }
+          ></div>
+          <div
+            className={
+              isMenuClosed
+                ? styles.mobileMenuLine
+                : styles.mobileMenuClosedLastLine
+            }
+          ></div>
+        </div>
+        <ul
+          ref={menuRef}
+          className={isMenuClosed ? styles.menuIsClosed : styles.navMenu}
+        >
+          <h2>
+            <Link to="/" className={styles.navMenuLogo}>
+              PhotoByCarl &trade;
+            </Link>
+          </h2>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+            <ul className={styles.galleryMenuList}>
+              <li>
                 <li>
-                  <li>
-                    <Link
-                      to="/gallery/cars"
-                      className={styles.galleryMenuListItem}
-                    >
-                      Cars
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/gallery/events"
-                      className={styles.galleryMenuListItem}
-                    >
-                      Events
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/gallery/outdoors"
-                      className={styles.galleryMenuListItem}
-                    >
-                      Outdoors
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/gallery/random"
-                      className={styles.galleryMenuListItem}
-                    >
-                      Random
-                    </Link>
-                  </li>
+                  <Link
+                    to="/gallery/cars"
+                    className={styles.galleryMenuListItem}
+                  >
+                    Cars
+                  </Link>
                 </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
+                <li>
+                  <Link
+                    to="/gallery/events"
+                    className={styles.galleryMenuListItem}
+                  >
+                    Events
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/gallery/outdoors"
+                    className={styles.galleryMenuListItem}
+                  >
+                    Outdoors
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/gallery/random"
+                    className={styles.galleryMenuListItem}
+                  >
+                    Random
+                  </Link>
+                </li>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul className={styles.desktopMenu}>
+          <li>
+            <Link to="/" className={styles.desktopMenuItem}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/gallery" className={styles.desktopMenuItem}>
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className={styles.desktopMenuItem}>
+              About
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };

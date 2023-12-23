@@ -4,8 +4,8 @@
 
 .mobileMenuContainer {
   position: absolute;
-  right: 10px;
-  top: 15px;
+  right: 20px;
+  top: 20px;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -22,7 +22,7 @@
   background-color: rgba(255, 255, 255);
   width: 20px;
   transition: all 0.4s ease-in-out;
-  box-shadow: 0px 0px 3px 1px #242424;
+  box-shadow: 0px 0px 2px 0.8px #242424;
 }
 .mobileMenuClosedTopLine {
   padding: 1px;
@@ -96,4 +96,33 @@
   font-size: 16px !important;
   padding-left: 10px;
   padding-top: 8px;
+}
+.desktopMenu {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .mobileMenuContainer {
+    display: none;
+  }
+  .desktopMenu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .desktopMenuItem {
+    text-shadow: 0px 0px 2px #242424;
+    font-size: 24px;
+    position: relative;
+  }
+  .desktopMenuItem:hover::after {
+    content: "";
+    padding: 1px 40px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: padding 0.3s ease-in-out;
+  }
+  .desktopMenuItem::after {
+    content: "";
+  }
 }

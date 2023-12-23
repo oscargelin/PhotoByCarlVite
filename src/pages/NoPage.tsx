@@ -1,7 +1,14 @@
-import React from "react";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const NoPage = () => {
-  return <div>404, page not found</div>;
+  return (
+    <div>
+      <Header />
+      <main>404, page not found</main>
+      <Footer />
+    </div>
+  );
 };
 
 export default NoPage;

@@ -1,4 +1,4 @@
-import { events } from "../../assets/eventImages";
+import { events } from "../../assets/imageList";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Image from "../../components/Image";
