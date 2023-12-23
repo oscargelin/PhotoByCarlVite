@@ -1,4 +1,3 @@
-import CarSvg from "../assets/images/svgs/CarSvg";
 import InstaSvg from "../assets/images/svgs/InstaSvg";
 import PinterestSvg from "../assets/images/svgs/PinterestSvg";
 import Styles from "./Footer.module.css";
