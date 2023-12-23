@@ -68,14 +68,7 @@ main {
 }
 
 img {
-  min-height: 250px;
   width: 100%;
-}
-
-@media only screen and (max-width: 320px) {
-  img {
-    height: 186px;
-  }
 }
 @media only screen and (min-width: 1024px) {
   header {
