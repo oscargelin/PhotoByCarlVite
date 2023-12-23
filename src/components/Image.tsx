@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Image.module.css";
 
 type TImage = {
