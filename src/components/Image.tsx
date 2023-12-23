@@ -13,7 +13,7 @@ const Image = ({ webp, jpg, alt, header }: TImage) => {
     <div className={styles.imgContainer}>
       <picture>
         <source srcSet={webp} type="image/webp" />
-        <img src={jpg} alt={alt} />
+        <img src={jpg} alt={alt} decoding="async" loading="lazy" />
       </picture>
       <h2>{header}</h2>
     </div>

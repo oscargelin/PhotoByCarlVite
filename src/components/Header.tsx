@@ -92,10 +92,10 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      to="/gallery/people"
+                      to="/gallery/events"
                       className={styles.galleryMenuListItem}
                     >
-                      People
+                      Events
                     </Link>
                   </li>
                   <li>

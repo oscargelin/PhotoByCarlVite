@@ -8,8 +8,8 @@ import randomWebp from "../../public/images/random/randomOne.webp";
 import randomJpg from "../../public/images/random/randomOne.jpg";
 import eventsWebp from "../../public/images/events/champagne.webp";
 import eventsJpg from "../../public/images/events/champagne.jpg";
-import outdoorsWebp from "../../public/images/outdoors/archipelagoFour.webp";
-import outdoorsJpg from "../../public/images/outdoors/archipelagoFour.jpg";
+import outdoorsWebp from "../../public/images/outdoors/outdoorsOne.webp";
+import outdoorsJpg from "../../public/images/outdoors/outdoorsOne.jpg";
 
 const Gallery = () => {
   return (

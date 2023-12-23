@@ -5,15 +5,14 @@ import carOneJpg from "../../../public/images/cars/carOne.jpg";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { cars } from "../../assets/carImages";
+import { TImage } from "../../assets/types";
 
 const Cars = () => {
-  const srcSet = `${carOneWebP} 1x`; // Assuming carOneWebP is the path to your WebP image
-
   return (
     <div>
       <Header />
       <main>
-        {cars.map((car: any) => {
+        {cars.map((car: TImage) => {
           return <Image webp={car.webp} jpg={car.jpg} alt={car.alt} />;
         })}
       </main>

@@ -35,6 +35,9 @@ header {
   position: relative;
   height: 6vh;
   padding-bottom: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 footer {
@@ -48,7 +51,6 @@ footer {
 h1 {
   font-size: 42px;
   text-shadow: 0px 0px 1px;
-  padding-left: 20px;
 }
 svg {
   height: 32px;
@@ -59,13 +61,18 @@ svg:hover {
 }
 main {
   min-height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: start;
   padding: 20px 20px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 img {
-  height: 240px;
+  min-height: 250px;
   width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+  img {
+    height: 186px;
+  }
 }

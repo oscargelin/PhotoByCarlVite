@@ -10,6 +10,16 @@
   box-shadow: 1px 1px 5px white;
   animation: animate 5s linear infinite;
 }
+.flexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    width: 180px;
+  }
+}
 
 @keyframes animate {
   0% {

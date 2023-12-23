@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className={styles.test}>
       <Header />
-      <main>
+      <main className={styles.flexBox}>
         <Link to={"/gallery"} className={styles.btn}>
           View Gallery
         </Link>
