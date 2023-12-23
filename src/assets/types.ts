@@ -1,5 +1,5 @@
 export type TImage = {
-  webp: string;
+  webp?: string;
   jpg: string;
   alt: string;
 };

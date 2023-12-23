@@ -32,9 +32,12 @@ const Header = () => {
 
   return (
     <header>
-      <Link to={"/"}>
-        <h1>PhotoByCarl</h1>
-      </Link>
+      <h1>
+        <Link to={"/"} className={styles.h1}>
+          PhotoByCarl
+        </Link>
+      </h1>
+
       <div>
         <nav>
           <div

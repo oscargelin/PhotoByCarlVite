@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Image.module.css";
 
 type TImage = {
-  webp: string;
+  webp?: string;
   jpg: string;
   alt: string;
   header?: string;
