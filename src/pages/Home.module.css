@@ -36,6 +36,13 @@
   }
 }
 
+.header {
+  height: 8vh;
+}
+.footer {
+  height: 12vh;
+}
+
 .test {
   background-image: url("https://www.photobycarl.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcarFour.1119f732.jpg&w=3840&q=100"); /* Replace 'your-image.jpg' with the path to your image */
   background-size: center; /* Cover the entire container */

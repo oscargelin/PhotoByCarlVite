@@ -1,13 +1,18 @@
 import InstaSvg from "../assets/images/svgs/InstaSvg";
 import PinterestSvg from "../assets/images/svgs/PinterestSvg";
 import Styles from "./Footer.module.css";
-const Footer = () => {
+
+type TFooter = {
+  className?: string;
+};
+
+const Footer = ({ className }: TFooter) => {
   return (
-    <footer>
-      <div className={Styles.carSvg}>
-        <div className={Styles.carFlame}></div>
+    <footer className={className}>
+      {/* <div className={Styles.carSvg}> */}
+      {/* </footer> <div className={Styles.carFlame}></div>
         {/* <CarSvg /> */}
-      </div>
+      {/*</div> 
       {/* <div className={Styles.traffiLightContainer}>
         <div className={Styles.trafficLightOne}></div>
         <div className={Styles.trafficLightTwo}></div>

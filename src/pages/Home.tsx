@@ -16,13 +16,13 @@ const Home = () => {
           objectFit: "cover",
         }}
       />
-      <Header />
+      <Header className={styles.header} />
       <main className={styles.flexBox}>
         <Link to={"/gallery"} className={styles.btn}>
           View Gallery
         </Link>
       </main>
-      <Footer />
+      <Footer className={styles.footer} />
     </div>
   );
 };

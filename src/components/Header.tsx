@@ -2,7 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+type THeader = {
+  className?: string;
+};
+
+const Header = ({ className }: THeader) => {
   const [isMenuClosed, setIsMenuClosed] = useState<boolean>(true);
 
   const menuRef = useRef<HTMLUListElement | null>(null);
@@ -31,7 +35,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className={className}>
       <h1>
         <Link to={"/"} className={styles.h1}>
           PhotoByCarl

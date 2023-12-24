@@ -33,7 +33,6 @@ ul {
 }
 header {
   position: relative;
-  height: 6vh;
   padding-bottom: 40px;
   max-width: 1280px;
   margin: 0 auto;
@@ -41,12 +40,11 @@ header {
 }
 
 footer {
-  height: 14vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  padding-bottom: 20px;
 }
 h1 {
   font-size: 42px;
@@ -80,6 +78,6 @@ img {
     width: 100%;
   }
   main {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 }
